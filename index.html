@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCH_BASEMENT</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo arch basement.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header id="home">
+    <img  onclick="scrollToSection('home')" class="logoImage" src="./logo arch basement - Copy.jpg" alt="logo ARCH_BASEMENT" >
+    <nav id="main-nav">
+        <ul>
+          <li onclick="scrollToSection('home')">Home</li>
+          <li onclick="scrollToSection('about')">About Us</li>
+          <li onclick="scrollToSection('services')">Services</li>
+          <li onclick="scrollToSection('portfolio')">Project</li>
+          <li onclick="scrollToSection('contact')">Contact</li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <div class="mainContent">
+        <img class="mainProjectImage" src="./main image.png" alt="projectName" >
+        <div class="mainContentText">
+          <h1 class="mainH1">Car Roof Architecture</h1>
+          <p class="mainP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris.
+          </p>
+          <button class="mainButton">View Project</button>
+        </div>
+    </div>
+</div>
+
+    <div class="aboutUs" id="about" >
+        <div class="frameImgContainer">
+          <img class="frame" alt="frame" src="./frame.png">
+          <img class="aboutUsImage" alt="about us" src="./image about us.png">
+        </div>
+        <div class="aboutUsContentContainer">
+            <div class="divForH2 aboutUsH2">
+                <h2>About Us</h2>
+                <img class="divider" src="./divider.png">
+            </div>
+            <p class="aboutUsP">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+              doloremque laudantium, totam rem aperiam,
+              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+              sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+              odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+              sequi nesciunt. 
+            </p>
+            <h3 class="MissionH3">Our Mission</h3>
+            <p class="MissionP">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+              odit aut fugit, sed quia consequuntur magni dolores eos qui.
+            </p>
+        </div>
+    </div>
+
+    <div class="ourServices" id="services">
+        <div class="divForH2">
+            <h2 class="ourServicesH2">Our Services</h2>
+            <img src="./divider.png">
+        </div>
+
+        <section class="ourServicesPhotoes">
+          <div class="servicesPhoto">
+              <img class="ServicesIMG"  src="./our services 1.png">
+              <h4 class="servicesH4">Architecture</h4>
+          </div>
+          <div class="servicesPhoto">
+              <img class="ServicesIMG"  src="./our services 2.png">
+              <h4 class="servicesH4">Interior Design</h4>
+          </div>
+          <div class="servicesPhoto">
+              <img class="ServicesIMG"  src="./our services 3.png">
+              <h4 class="servicesH4">Planning</h4>
+          </div>
+          <div class="servicesPhoto">
+              <img class="ServicesIMG"  src="./our services 4.png">
+              <h4 class="servicesH4">Consulting</h4>
+          </div>     
+        </section>
+
+    </div>
+
+    <div class="ourProject" id="portfolio">
+        <div class="divForH2">
+            <h2 class="ourProjectH2">Our Project</h2>
+            <img src="./divider.png">
+        </div>
+        <img class="imgVideo" src="./place your video project.png">
+    </div>
+
+    <div class="projectList">
+        <div class="projectListPhotoes">
+
+            <div class="projectName">
+                <img class="project first" src="./project 1.png">
+                <div class="projectNatmeZoomcontainer one">
+                  <img class="zoomFirst" src="./zoom icon.png">
+                  <h4 class="projectName">Project Name: Architecture1</h4>
+                </div>
+            </div>
+
+            <div class="projectName">
+                <img class="project second" src="./project 2.png">
+                <div class="projectNatmeZoomcontainer two">
+                  <img class="zoomSecond" src="./zoom icon.png">
+                  <h4 class="projectName">Project Name: Architecture2</h4>
+                </div>
+            </div>
+
+            <div class="projectName">
+                <img class="project third" src="./project 3.png">
+                <div class="projectNatmeZoomcontainer three">
+                  <img class="zoomThird" src="./zoom icon.png">
+                  <h4 class="projectNameh4">Project Name: Architecture3</h4>
+                </div>
+            </div>         
+ 
+        </div>
+        <div class="arrows">
+            <svg  class="left arrow" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                 width="36.000000pt" height="20.000000pt" viewBox="0 0 36.000000 20.000000"
+                 preserveAspectRatio="xMidYMid meet">
+ 
+                 <g transform="translate(0.000000,20.000000) scale(0.100000,-0.100000)"
+                     fill="#000000" stroke="none">
+                 <path d="M40 145 l-44 -45 44 -45 c24 -25 48 -45 52 -45 4 0 8 16 8 35 l0 35
+                     130 0 c123 0 130 1 130 20 0 19 -7 20 -130 20 l-130 0 0 35 c0 19 -4 35 -8 35
+                     -4 0 -28 -20 -52 -45z"/>
+                </g>
+            </svg>
+
+            <svg class="right arrow" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                 width="36.000000pt" height="20.000000pt" viewBox="0 0 36.000000 20.000000"
+                 preserveAspectRatio="xMidYMid meet">
+
+                 <g transform="translate(0.000000,20.000000) scale(0.100000,-0.100000)"
+                     fill="#000000" stroke="none">
+                 <path d="M270 153 l0 -32 -132 -3 c-110 -3 -133 -6 -133 -18 0 -12 23 -15 133
+                     -18 l132 -3 0 -32 0 -32 42 43 43 42 -43 42 -42 43 0 -32z"/>
+                 </g>
+            </svg>
+        </div>
+    </div>
+
+    
+        <div class="divForH2">
+          <h2 class="contactH2">Contact Us</h2>
+          <img src="./divider.png">
+        </div>
+
+    <div class="contactDiv" id="contact">
+        <div>
+          <img class="logoImage" src="./logo arch basement - Copy.jpg" alt="logo ARCH_BASEMENT" >
+
+          <address>
+              Tbilisi<br>
+              Street 7<br>
+              <a href="mailto:example@example.com">example@example.com</a><br>
+              <a href="tel:+995559999999">599-999-999</a>
+          </address>
+        </div>
+
+        <form class="inputsContainer">
+            <div class="grid1">
+              <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+
+            <div class="grid2">
+              <input type="email" id="email" name="email" placeholder="email" required>
+            </div>
+
+            <div class="grid3">
+              <textarea  type="text" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+            </div>
+            <div class="grid4">
+              <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+
+
+<footer>
+    <svg class="facebook" fill="#393e46" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g transform="translate(1 1)">
+	<g>
+		<path d="M468.333-1H41.667C17.773-1-1,17.773-1,41.667v426.667C-1,492.227,17.773,511,41.667,511h196.267h102.4h128
+			C492.227,511,511,492.227,511,468.333V41.667C511,17.773,492.227-1,468.333-1z M255,493.933V323.267h-68.267V255H255v-59.733
+			c0-48.64,37.547-89.6,85.333-93.867h76.8v68.267h-68.267c-14.507,0-25.6,11.093-25.6,25.6V255H408.6v68.267h-85.333v170.667H255z
+			 M493.933,468.333c0,14.507-11.093,25.6-25.6,25.6h-128v-153.6h85.333v-102.4h-85.333v-42.667c0-5.12,3.413-8.533,8.533-8.533
+			H434.2v-102.4h-94.72c-57.173,5.12-101.547,53.76-101.547,110.933v42.667h-68.267v102.4h68.267v153.6H41.667
+			c-14.507,0-25.6-11.093-25.6-25.6V41.667c0-14.507,11.093-25.6,25.6-25.6h426.667c14.507,0,25.6,11.093,25.6,25.6V468.333z"/>
+	</g>
+</g>
+</svg>
+
+<svg class="instagram" fill="#393e46" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g transform="translate(1 1)">
+	<g>
+		<g>
+			<path d="M365.08-1H144.92C64.707-1-1,64.707-1,144.92v220.16C-1,445.293,64.707,511,144.92,511h220.16
+				C445.293,511,511,445.293,511,365.08V144.92C511,64.707,445.293-1,365.08-1z M493.933,365.08
+				c0,70.827-58.027,128.853-128.853,128.853H144.92c-70.827,0-128.853-58.027-128.853-128.853V144.92
+				c0-70.827,58.027-128.853,128.853-128.853h220.16c70.827,0,128.853,58.027,128.853,128.853V365.08z"/>
+			<path d="M365.08,50.2H144.92c-52.053,0-94.72,42.667-94.72,94.72v220.16c0,52.053,42.667,94.72,94.72,94.72h220.16
+				c52.053,0,94.72-42.667,94.72-94.72V144.92C459.8,92.867,417.133,50.2,365.08,50.2z M442.733,365.08
+				c0,42.667-34.987,77.653-77.653,77.653H144.92c-42.667,0-77.653-34.987-77.653-77.653V144.92
+				c0-42.667,34.987-77.653,77.653-77.653h220.16c42.667,0,77.653,34.987,77.653,77.653V365.08z"/>
+			<path d="M255,118.467c-75.093,0-136.533,61.44-136.533,136.533S179.907,391.533,255,391.533S391.533,330.093,391.533,255
+				S330.093,118.467,255,118.467z M255,374.467c-65.707,0-119.467-53.76-119.467-119.467S189.293,135.533,255,135.533
+				S374.467,189.293,374.467,255S320.707,374.467,255,374.467z"/>
+			<path d="M255,161.133c-52.053,0-93.867,41.813-93.867,93.867c0,52.053,41.813,93.867,93.867,93.867s93.867-41.813,93.867-93.867
+				S307.053,161.133,255,161.133z M255,331.8c-42.667,0-76.8-34.133-76.8-76.8c0-42.667,34.133-76.8,76.8-76.8
+				c42.667,0,76.8,34.133,76.8,76.8C331.8,297.667,297.667,331.8,255,331.8z"/>
+			<path d="M391.533,92.867c-14.507,0-25.6,11.093-25.6,25.6s11.093,25.6,25.6,25.6c14.507,0,25.6-11.093,25.6-25.6
+				S406.04,92.867,391.533,92.867z"/>
+		</g>
+	</g>
+</g>
+</svg>
+
+<svg class="linkedin" fill="#393e46" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g transform="translate(1)">
+	<g>
+		<g>
+			<path d="M68.12,4.267c-18.773,0-35.84,6.827-48.64,19.627C5.827,37.547-1,54.613-1,72.533c0,18.773,7.68,35.84,20.48,48.64
+				c12.8,12.8,30.72,20.48,47.787,19.627c0,0,0.853,0,1.707,0c17.067,0,33.28-6.827,46.08-19.627
+				c12.8-12.8,20.48-29.867,20.48-48.64c0.853-17.92-6.827-34.987-19.627-47.787C103.107,11.093,86.04,4.267,68.12,4.267z
+				 M103.107,109.227c-9.387,9.387-22.187,15.36-35.84,14.507c-12.8,0-26.453-5.12-35.84-14.507
+				c-10.24-9.387-15.36-23.04-15.36-36.693s5.12-26.453,15.36-36.693c9.387-9.387,22.187-14.507,36.693-14.507
+				c12.8,0,25.6,5.12,34.987,14.507c10.24,10.24,15.36,23.04,15.36,36.693S113.347,99.84,103.107,109.227z"/>
+			<path d="M101.4,157.867H32.28c-13.653,0-24.747,11.093-24.747,25.6v298.667c0,13.653,11.947,25.6,25.6,25.6H101.4
+				c13.653,0,25.6-11.947,25.6-24.747v-299.52C127,169.813,115.053,157.867,101.4,157.867z M109.933,482.987
+				c0,4.267-4.267,7.68-8.533,7.68H33.133c-4.267,0-8.533-4.267-8.533-8.533V183.467c0-4.267,3.413-8.533,7.68-8.533h69.12
+				c4.267,0,8.533,4.267,8.533,8.533V482.987z"/>
+			<path d="M391.533,149.333h-17.92c-33.28,0-64.853,14.507-85.333,37.547v-11.947c0-8.533-8.533-17.067-17.067-17.067H185.88
+				c-7.68,0-17.067,6.827-17.067,16.213v318.293c0,9.387,9.387,15.36,17.067,15.36h93.867c7.68,0,17.067-5.973,17.067-15.36v-184.32
+				c0-28.16,20.48-50.347,46.933-50.347c13.653,0,26.453,5.12,35.84,14.507c8.533,7.68,11.947,19.627,11.947,34.987v183.467
+				c0,8.533,8.533,17.067,17.067,17.067h85.333c8.533,0,17.067-8.533,17.067-17.067v-220.16
+				C511,202.24,458.947,149.333,391.533,149.333z M493.933,489.813l-0.853,0.853h-83.627L408.6,307.2
+				c0-20.48-5.12-35.84-16.213-46.933c-12.8-12.8-29.867-19.627-47.787-19.627c-35.84,0.853-64,29.867-64,67.413v182.613h-93.867
+				V174.933h84.48l0.853,0.853v53.76l23.04-23.04l0.853-0.853c17.067-23.893,46.933-39.253,78.507-39.253h17.92
+				c57.173,0,101.547,46.08,101.547,104.107V489.813z"/>
+		</g>
+	</g>
+</g>
+</svg>
+
+
+    
+</footer>
+
+
+<script src="./script.js"> </script>
+<!-- <script src="https://cdn.emailjs.com/dist/email.min.js%22%3E"> </script> -->
+
+</body>
+</html>

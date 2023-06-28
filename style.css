@@ -1,0 +1,758 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    -webkit-box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Desctop version */
+
+body {
+    background-color: #3E3E3E;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px; 
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: #3E3E3E;
+}
+
+.logoImage {
+    width: 175px;
+	margin-right: 160px;
+	cursor: pointer;
+}
+
+ul {
+	width: 350px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content:space-between; 
+} 
+
+li {
+	display: inline;
+	color: #ffffff;
+	text-shadow: 2px 2px #45494e;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+
+li:hover {
+	text-decoration: overline #0092ca 3px;
+	transition: 0.6s;
+  }
+
+.mainContent {
+	position:relative;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	margin-top: 70px;
+}
+
+.mainProjectImage {
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.mainContentText {
+	width: 740px;
+	position: absolute; 
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	color: #ffffff;
+	margin-left: -50px;
+}
+
+.mainContentText h1 {
+	font-size: 42px;
+	font-weight: lighter;
+	letter-spacing: 9px;
+	line-height: 66px;
+}
+
+p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.mainButton {
+	background-color: transparent;
+	height: 35px;
+	width: 120px;
+	cursor: pointer;
+    border-width: 3px;
+    border-style: outset;
+    border-color: white;
+	border-radius: 3px;
+	font-family: 'Rubik', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 11px;
+	font-weight: 500;
+	margin-top: 55px;
+}
+
+ .frameImgContainer {
+	position: relative;
+	margin-right: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 48px; 
+}
+
+.frame {
+	position:absolute;
+	width: 260px;
+	z-index: -1;
+}
+
+ .aboutUsImage {
+	width: 355px;
+	z-index: 1;
+}        
+
+
+.aboutUs {
+	display: flex;
+	flex-direction: row; 
+	width: 870px; 
+	margin: auto;
+	color: white;
+} 
+
+h2 {
+	font-size: 23px;
+	font-weight: 600;
+	display: inline;
+	margin-right: 30px;
+	color: white;
+}
+.divForH2 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 55px;
+	margin-bottom: 34px;
+}
+
+.aboutUsH2 {
+	margin-bottom: 20px;
+	justify-content: flex-start;
+}
+
+.MissionH3 {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 42px;
+}
+
+.ourServicesPhotoes {
+	display: flex;
+}
+
+.ServicesIMG {
+	width: 100%;
+}  
+
+.servicesPhoto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.servicesH4 {
+	position: absolute;
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+}
+
+.ourProject {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ourProject img {
+	margin-bottom: 60px;
+}
+
+.projectListPhotoes {
+	display: flex;
+}
+
+.project {
+	width: 100%;
+}
+
+.projectNatmeZoomcontainer {
+	position: absolute; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	row-gap: 30px;
+}
+
+.projectName {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.one, .three {
+	display: none;
+}
+
+.left path, .right path {
+	fill: #232323;
+	cursor: pointer;
+}
+
+.left:hover path, .right:hover path {
+	fill: #0092c9;
+}
+
+.arrows {
+	display: flex;
+	column-gap:  25px;
+	margin-top: 20px;
+	justify-content: flex-end;
+	margin-right: 280px;
+}
+
+.contactDiv img {
+	margin-bottom: 30px;
+	width: 145px;
+}
+
+.contactDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	column-gap: 160px;
+	margin-bottom: 60px;
+}
+
+address, address a {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 180%;
+} 
+
+.inputsContainer {
+	display: grid;
+	gap: 20px;
+}
+
+.grid1 {
+	grid-column: 1 / span 2;
+}
+
+.grid2 {
+	grid-column: 3 / span 4;
+} 
+
+.grid3 {
+	grid-column: 1 / span 4;
+}
+
+.grid3 textarea {
+	width: 400px;
+	height: 100px;
+	border: 0;
+	background-color: #393e46;
+	color: white;
+	border-radius: 5px;
+}
+
+.grid1 input, .grid2 input {
+	width: 177px;
+	height: 30px;
+	background-color: #393e46;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+}
+
+.grid4 {
+	grid-column: 4; 
+}
+
+.grid1 input::placeholder, .grid2 input::placeholder, .grid3 textarea::placeholder {
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	opacity: 0.35; 
+} 
+
+.grid1 input[type=text], .grid2 input[type=email], .grid3 textarea[type=text] {
+	padding-left: 20px;
+}
+
+.grid4 button {
+	width: 110px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: #0092ca;
+	color: white;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background-color: #1a1f26;
+	align-items: center;
+	justify-content: center;
+	column-gap: 50px;
+	height: 150px;
+}
+
+footer svg {
+	cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+	.logoImage {
+		width: 160px;
+		margin-right: 80px;
+	}
+	
+	ul {
+		width: 300px;
+	} 
+	
+	a {
+		font-size: 13px;
+	}
+	
+	.mainContentText {
+		width: 600px;
+		margin-left: 0;
+	}
+	
+	.mainContentText h1 {
+		font-size: 36px;
+		letter-spacing: 7px;
+		line-height: 46px;
+	}
+	
+	p {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 22px;
+	}
+	 .frameImgContainer {
+		margin-right: 50px;
+	}
+	
+	.frame {
+		width: 180px;
+	}
+	
+	 .aboutUsImage {
+		width: 230px;
+	}       
+		
+	.aboutUs {
+		width: 600px; 
+	} 
+	
+	h2 {
+		font-size: 20px;
+	}
+
+	
+	.MissionH3 {
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.servicesH4 {
+		font-size: 15px;
+	}
+	
+	.ourProject img {
+		margin-bottom: 40px;
+	}
+
+	.imgVideo {
+		width: 80%;
+	}
+	
+	.projectNatmeZoomcontainer {
+		row-gap: 20px;
+	}
+	
+	.arrows {
+		column-gap:  20px;
+		margin-top: 18px;
+		margin-right: 90px;
+	}
+	
+	.contactDiv img {
+		margin-bottom: 30px;
+		width: 135px;
+	}
+	
+	.contactDiv {
+		column-gap: 30px;
+	}
+	
+	address, address a {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 160%;
+	} 
+	
+	.inputsContainer {
+		gap: 18px;
+	}	
+	
+	footer {
+		height: 130px;
+	}
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+/* header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px; 
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: #3E3E3E;
+}
+
+.logoImage {
+    width: 175px;
+	margin-right: 160px;
+	cursor: pointer;
+} */
+
+/* ul {
+	width: 350px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content:space-between; 
+}  */
+
+/* li {
+	display: inline;
+	color: #ffffff;
+	text-shadow: 2px 2px #45494e;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+} */
+
+
+/* li:hover {
+	text-decoration: overline #0092ca 3px;
+	transition: 0.6s;
+  } */
+
+.mainContent {
+	width: 80%;
+	margin-top: 60px;
+}
+
+.mainProjectImage {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.content {
+	justify-content:center;
+}
+
+.mainContentText {
+	width: 80%;
+	position: relative; 
+	margin-left: 0;
+}
+
+.mainContentText h1 {
+	font-size: 32px;
+	letter-spacing: 7px;
+	line-height: 45px;
+}
+
+p {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.mainButton {
+	height: 32px;
+	width: 110px;
+	font-size: 10px;
+	margin-top: 20px;
+}
+
+ .frameImgContainer {
+	margin-right: 0;
+	padding-top: 100px; 
+}
+
+.frame {
+	position:absolute;
+	width: 60%;
+	z-index: -1;
+}
+
+ .aboutUsImage {
+	width: 80%;
+}     
+
+
+.aboutUs {
+	flex-direction: column; 
+	width: 62%; 
+} 
+
+h2 {
+	font-size: 21px;
+	font-weight: 500;
+	margin-right: 15px;
+}
+.divForH2 {
+	align-items: center;
+	flex-direction: column;
+	row-gap: 10px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.ourServicesPhotoes {
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.ServicesIMG {
+	width: 80%;
+}  
+
+.ourProject img {
+	margin-bottom: 60px;
+}
+
+.one, .three {
+	display: none;
+}
+
+.arrows {
+	margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactDiv img {
+	margin-bottom: 30px;
+	width: 145px;
+}
+
+.contactDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	column-gap: 160px;
+	margin-bottom: 60px;
+}
+
+address, address a {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 180%;
+} 
+
+.inputsContainer {
+	display: grid;
+	gap: 20px;
+}
+
+.grid1 {
+	grid-column: 1 / span 2;
+}
+
+.grid2 {
+	grid-column: 3 / span 4;
+} 
+
+.grid3 {
+	grid-column: 1 / span 4;
+}
+
+.grid3 textarea {
+	width: 350px;
+	height: 100px;
+	border: 0;
+	background-color: #393e46;
+	color: white;
+	border-radius: 5px;
+}
+
+.grid1 input, .grid2 input {
+	width: 150px;
+	height: 30px;
+	background-color: #393e46;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+}
+
+.grid4 {
+	grid-column: 4; 
+}
+
+.grid1 input::placeholder, .grid2 input::placeholder, .grid3 textarea::placeholder {
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	opacity: 0.35; 
+} 
+
+.grid1 input[type=text], .grid2 input[type=email], .grid3 textarea[type=text] {
+	padding-left: 20px;
+}
+
+.grid4 button {
+	width: 110px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: #0092ca;
+	color: white;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background-color: #1a1f26;
+	align-items: center;
+	justify-content: center;
+	column-gap: 50px;
+	height: 150px;
+}
+
+footer svg {
+	cursor: pointer;
+}
+
+
+
+}
+
+
+
+
