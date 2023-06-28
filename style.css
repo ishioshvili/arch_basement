@@ -62,11 +62,12 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding-top: 40px;
-	padding-bottom: 40px; 
-	position: fixed;
+	padding-bottom: 40px;
+	position:fixed;
 	width: 100%;
 	z-index: 999;
 	background-color: #3E3E3E;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logoImage {
@@ -105,7 +106,7 @@ li:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center; 
-	margin-top: 70px;
+	margin-top: 110px;
 }
 
 .mainProjectImage {
@@ -164,7 +165,6 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 48px; 
 }
 
 .frame {
@@ -181,11 +181,15 @@ p {
 
 .aboutUs {
 	display: flex;
-	flex-direction: row; 
 	width: 870px; 
 	margin: auto;
-	color: white;
+	color: white; 
+	padding-top: 120px;
 } 
+
+.ourServices {
+	padding-top: 120px;
+}
 
 h2 {
 	font-size: 23px;
@@ -198,7 +202,6 @@ h2 {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	margin-top: 55px;
 	margin-bottom: 34px;
 }
 
@@ -238,6 +241,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 120px;
 }
 
 .ourProject img {
