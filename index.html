@@ -14,17 +14,40 @@
 </head>
 <body>
     <header id="home">
-    <img  onclick="scrollToSection('home')" class="logoImage" src="./logo arch basement - Copy.jpg" alt="logo ARCH_BASEMENT" >
-    <nav id="main-nav">
-        <ul>
-          <li onclick="scrollToSection('home')">Home</li>
-          <li onclick="scrollToSection('about')">About Us</li>
-          <li onclick="scrollToSection('services')">Services</li>
-          <li onclick="scrollToSection('portfolio')">Project</li>
-          <li onclick="scrollToSection('contact')">Contact</li>
-        </ul>
-    </nav>
-</header>
+        <div class="mobileHeader">
+          <img  onclick="scrollToSection('home')" class="logoImage" src="./logo arch basement - Copy.jpg" alt="logo ARCH_BASEMENT" >
+          <button class="nav-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px">
+                <linearGradient id="EIPc0qTNCX0EujYwtxKaXa" x1="12.066" x2="34.891" y1=".066" y2="22.891" gradientUnits="userSpaceOnUse">
+                  <stop offset=".237" stop-color="#3bc9f3"/>
+                  <stop offset=".85" stop-color="#1591d8"/>
+                </linearGradient>
+                <path fill="#ffffff" d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"/>
+                <linearGradient id="EIPc0qTNCX0EujYwtxKaXb" x1="12.066" x2="34.891" y1="12.066" y2="34.891" gradientUnits="userSpaceOnUse">
+                  <stop offset=".237" stop-color="#3bc9f3"/>
+                  <stop offset=".85" stop-color="#1591d8"/>
+                </linearGradient>
+                <path fill="#ffffff" d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"/>
+                <linearGradient id="EIPc0qTNCX0EujYwtxKaXc" x1="12.066" x2="34.891" y1="24.066" y2="46.891" gradientUnits="userSpaceOnUse">
+                  <stop offset=".237" stop-color="#3bc9f3"/>
+                  <stop offset=".85" stop-color="#1591d8"/>
+                </linearGradient>
+                <path fill="#ffffff" d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"/>
+              </svg>
+          </button>
+      </div>
+
+      <nav id="main-nav">
+          <ul class="links">
+            <li class="scrols1" onclick="scrollToSection('home')">Home</li>
+            <li class="scrols2"  onclick="scrollToSection('about')">About Us</li>
+            <li class="scrols3"  onclick="scrollToSection('services')">Services</li>
+            <li class="scrols4"  onclick="scrollToSection('portfolio')">Project</li>
+            <li class="scrols5"  onclick="scrollToSection('contact')">Contact</li>
+          </ul>
+      </nav>
+    </header>
+
 <div class="content">
     <div class="mainContent">
         <img class="mainProjectImage" src="./main image.png" alt="projectName" >
@@ -103,7 +126,7 @@
 
             <div class="projectName">
                 <img class="project first" src="./project 1.png">
-                <div class="projectNatmeZoomcontainer one">
+                <div class="projectNameZoomcontainer one">
                   <img class="zoomFirst" src="./zoom icon.png">
                   <h4 class="projectName">Project Name: Architecture1</h4>
                 </div>
@@ -111,7 +134,7 @@
 
             <div class="projectName">
                 <img class="project second" src="./project 2.png">
-                <div class="projectNatmeZoomcontainer two">
+                <div class="projectNameZoomcontainer two">
                   <img class="zoomSecond" src="./zoom icon.png">
                   <h4 class="projectName">Project Name: Architecture2</h4>
                 </div>
@@ -165,7 +188,7 @@
           <address>
               Tbilisi<br>
               Street 7<br>
-              <a href="mailto:example@example.com">example@example.com</a><br>
+              <a href="mailto:example@example.com">example@example.com</a>
               <a href="tel:+995559999999">599-999-999</a>
           </address>
         </div>
@@ -263,9 +286,7 @@
     
 </footer>
 
-
 <script src="./script.js"> </script>
-<!-- <script src="https://cdn.emailjs.com/dist/email.min.js%22%3E"> </script> -->
 
 </body>
 </html>

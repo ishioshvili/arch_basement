@@ -50,7 +50,11 @@ table {
 }
 
 
-/* Desctop version */
+/* Desctop version (more then 1240px) */
+
+.nav-toggle {
+	display: none;
+}
 
 body {
     background-color: #3E3E3E;
@@ -61,8 +65,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 	position:fixed;
 	width: 100%;
 	z-index: 999;
@@ -100,8 +104,8 @@ li:hover {
   }
 
 .mainContent {
-	position:relative;
-	width: 90%;
+	position:relative; 
+	width: 85%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -178,7 +182,6 @@ p {
 	z-index: 1;
 }        
 
-
 .aboutUs {
 	display: flex;
 	width: 870px; 
@@ -198,6 +201,7 @@ h2 {
 	margin-right: 30px;
 	color: white;
 }
+
 .divForH2 {
 	display: flex;
 	align-items: flex-start;
@@ -244,19 +248,20 @@ h2 {
 	padding-top: 120px;
 }
 
-.ourProject img {
-	margin-bottom: 60px;
-}
-
 .projectListPhotoes {
 	display: flex;
+	padding-top: 120px;
+}
+
+.projectList {
+	padding-bottom: 120px;
 }
 
 .project {
 	width: 100%;
 }
 
-.projectNatmeZoomcontainer {
+.projectNameZoomcontainer {
 	position: absolute; 
 	display: flex;
 	flex-direction: column;
@@ -295,7 +300,7 @@ h2 {
 
 .contactDiv img {
 	margin-bottom: 30px;
-	width: 145px;
+	width: 145px;	
 }
 
 .contactDiv {
@@ -393,7 +398,7 @@ footer svg {
 }
 
 
-
+/* tablet version  */
 @media only screen and (max-width: 1240px) {
 	.logoImage {
 		width: 160px;
@@ -406,6 +411,10 @@ footer svg {
 	
 	a {
 		font-size: 13px;
+	}
+
+	.mainContent {
+		margin-top: 105px;
 	}
 	
 	.mainContentText {
@@ -422,8 +431,9 @@ footer svg {
 	p {
 		font-size: 14px;
 		font-weight: 500;
-		line-height: 22px;
+		line-height: 20px;
 	}
+	
 	 .frameImgContainer {
 		margin-right: 50px;
 	}
@@ -443,7 +453,6 @@ footer svg {
 	h2 {
 		font-size: 20px;
 	}
-
 	
 	.MissionH3 {
 		font-size: 15px;
@@ -462,7 +471,7 @@ footer svg {
 		width: 80%;
 	}
 	
-	.projectNatmeZoomcontainer {
+	.projectNameZoomcontainer {
 		row-gap: 20px;
 	}
 	
@@ -479,6 +488,7 @@ footer svg {
 	
 	.contactDiv {
 		column-gap: 30px;
+		margin-left: 50px;
 	}
 	
 	address, address a {
@@ -500,50 +510,68 @@ footer svg {
 
 
 
-
+/* mobile version  */
 
 @media only screen and (max-width: 768px) {
+	.mobileHeader {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 80%;
+		height: 81px;
+	}
 
-/* header {
-	display: flex;
+	.nav-toggle {
+		font-size: 30px; 
+		color: var(--clr-primary-5); 
+		background: #3E3E3E; 
+		border-color: transparent; 
+		transition: 0.2s;
+		cursor: pointer;
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+
+	/* .nav-toggle:hover {
+		transform: rotate(90deg);
+	} */
+
+	.links {
+		height: 0;
+		overflow: hidden;
+		transition: 0.3s;
+		width: auto;
+	}
+
+	.show-links {
+		height: 10rem;
+		margin-bottom: 20px;
+	}
+
+header {
 	align-items: center;
-	justify-content: center;
-	padding-top: 40px;
-	padding-bottom: 40px; 
+	flex-direction: column;
+	padding-top: 0;
+	padding-bottom: 0; 
 	position: fixed;
-	width: 100%;
 	z-index: 999;
-	background-color: #3E3E3E;
 }
 
 .logoImage {
-    width: 175px;
-	margin-right: 160px;
+    width: 150px;
+	margin-right: 0;
 	cursor: pointer;
-} */
+} 
 
-/* ul {
-	width: 350px;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content:space-between; 
-}  */
-
-/* li {
-	display: inline;
-	color: #ffffff;
-	text-shadow: 2px 2px #45494e;
-	font-size: 14px;
-	font-weight: 400;
-	cursor: pointer;
-} */
+ ul {
+	align-items:flex-start;
+	flex-direction: column;
+}  
 
 
-/* li:hover {
-	text-decoration: overline #0092ca 3px;
-	transition: 0.6s;
-  } */
+
+
 
 .mainContent {
 	width: 80%;
@@ -626,10 +654,6 @@ h2 {
 .ServicesIMG {
 	width: 80%;
 }  
-
-.ourProject img {
-	margin-bottom: 60px;
-}
 
 .one, .three {
 	display: none;
